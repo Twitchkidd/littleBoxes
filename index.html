@@ -8,12 +8,23 @@
   <title>Little Boxes</title>
   <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/styled-components@5.3.3/dist/styled-components.cjs.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
+  <style>
+    main {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+  </style>
   <main id='root'></main>
   <script type='text/babel'>
+    const Wrapper = styled.div`
+
+    `;
     ReactDOM.render(
       <React.StrictMode>
         <p>Hey</p>
